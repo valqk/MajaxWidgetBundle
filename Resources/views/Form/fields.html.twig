@@ -4,7 +4,7 @@
 {{ parent() }}
 <script type="text/javascript">
     $(function() {
-        $('#{{ form.vars.id }}').majaxdatetimeselector({date_can_be_empty: true, time_can_be_empty: true, seconds: false});
+        $('#{{ form.vars.id }}').majaxdatetimeselector({date_can_be_empty: false, time_can_be_empty: false, time_is_input: true, time_format_24h: true, seconds: false, dateFormat: 'dd.mm.yy'});
     });
 </script>
 {% endblock %}
